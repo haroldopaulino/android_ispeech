@@ -10,8 +10,8 @@ The scenario is about bank accounts transactions, which includes creating, editi
 
 This app is simply a prototype of what can be done with direct interaction with IBM i servers.
 
-https://play.google.com/store/apps/details?id=com.ispeech&hl=en
 
+[Play Store -> iSpeech](https://play.google.com/store/apps/details?id=com.ispeech&hl=en)
 
 ![unnamed-2](https://user-images.githubusercontent.com/28379115/184280694-71193fc9-8320-473f-b3d6-0c2dd9b3bbc8.jpg)
 ![unnamed-3](https://user-images.githubusercontent.com/28379115/184280697-d3d1eb32-0c1f-4c7e-9849-a3cc3dc3f106.jpg)
