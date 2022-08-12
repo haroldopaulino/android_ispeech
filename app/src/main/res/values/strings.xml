@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Speech iTest</string>
+    <string name="main_title">IBM i Speech Recognition Test</string>
+    <string name="main_menu">IBM i Speech Recognition Test</string>
+    <string name="operation">Operation</string>
+    <string name="account">Account</string>
+    <string name="source_account">Source Account</string>
+    <string name="destination_account">Destination Account</string>
+    <string name="amount">Amount</string>
+    <string name="transaction_notes">Transaction Notes (optional)</string>
+    <string name="notes">notes for this transaction</string>
+    <string name="auto_execute">auto execute upon speech recognition</string>
+    <string name="submit_data">SUBMIT DATA</string>
+    <string name="do_what_i_say">DO WHAT I SAY</string>
+
+    <string-array name="operations">
+        <item>BALANCE</item>
+        <item>DEPOSIT</item>
+        <item>WITHDRAW</item>
+        <item>TRANSFER</item>
+    </string-array>
+
+    <string-array name="accounts1">
+        <item>CHECKING</item>
+        <item>SAVINGS</item>
+    </string-array>
+
+    <string-array name="accounts2">
+        <item>SAVINGS</item>
+        <item>CHECKING</item>
+    </string-array>
+</resources>

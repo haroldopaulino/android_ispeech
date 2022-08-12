@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:padding="10dp"
+            android:background="#DDDDDD">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:id="@+id/menuContainer">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/_black_menu"
+                    android:contentDescription="@string/main_menu"
+                    android:id="@+id/menuImageView"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="@string/main_title"
+                android:textSize="20sp"
+                android:id="@+id/txt"
+                android:gravity="end|center_vertical" />
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/operation"/>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_gravity="start"
+                android:background="@drawable/black_box_transparent_background">
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/operation"
+                    android:entries="@array/operations" />
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/source_account"/>
+
+            <LinearLayout
+                style="@style/linear_container_1">
+
+                <FrameLayout
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="38dp"
+                    android:layout_gravity="start"
+                    android:background="@drawable/black_box_transparent_background">
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/accountType1"
+                        android:entries="@array/accounts1" />
+
+                </FrameLayout>
+
+                <EditText
+                    android:id="@+id/account1"
+                    style="@style/edittext_1"
+                    android:hint="@string/account"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/amount1"
+                    style="@style/edittext_1"
+                    android:hint="@string/amount"
+                    android:inputType="numberDecimal" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/destination_account"/>
+
+            <LinearLayout
+                style="@style/linear_container_1">
+
+                <FrameLayout
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="38dp"
+                    android:layout_gravity="start"
+                    android:background="@drawable/black_box_transparent_background">
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/accountType2"
+                        android:entries="@array/accounts2" />
+
+                </FrameLayout>
+
+                <EditText
+                    android:id="@+id/account2"
+                    style="@style/edittext_1"
+                    android:hint="@string/account"
+                    android:inputType="number"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/transaction_notes"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:id="@+id/notes"
+                    android:background="@drawable/black_box_transparent_background"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="0px"
+                    android:hint="@string/notes"/>
+
+            </FrameLayout>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/autoExecute"
+                android:checked="true"
+                android:text="@string/auto_execute"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/black_box_transparent_background">
+
+                        <Button
+                            style="@style/button_1"
+                            android:id="@+id/stop"
+                            android:text="@string/submit_data"/>
+
+                    </FrameLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/black_box_transparent_background">
+
+                        <Button
+                            style="@style/button_1"
+                            android:id="@+id/start"
+                            android:text="@string/do_what_i_say"/>
+
+                    </FrameLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:id="@+id/list"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

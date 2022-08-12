@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_border_transparent_box"
+    android:padding="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#DD888888"
+        android:weightSum="1"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#66FFFFFF"
+            android:paddingLeft="10dp">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/backImageContainer"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/backImage"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="left"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/left" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/alertTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|right"
+                android:gravity="center_vertical|end"
+                android:paddingRight="20dp"
+                android:text="About"
+                android:textColor="#000000"
+                android:textSize="20dip" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1">
+
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:id="@+id/webView"
+                android:background="#00FFFFFF"
+                android:layout_gravity="center_horizontal" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
